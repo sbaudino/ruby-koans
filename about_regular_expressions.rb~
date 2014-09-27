@@ -138,7 +138,7 @@ class AboutRegularExpressions < Neo::Koan
     grays = /(James|Dana|Summer) Gray/
     assert_equal "James Gray", "James Gray"[grays]
     assert_equal "Summer", "Summer Gray"[grays, 1]
-    assert_equal nil, "Jim Gray"[grays, 1]
+    assert_equal "Gray", "Jim Gray"[grays, 1]
   end
 
   # THINK ABOUT IT:
